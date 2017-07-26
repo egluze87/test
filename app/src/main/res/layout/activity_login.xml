@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context="com.byethost5.egle.BeautyRoom.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_username"
+            />
+
+        <EditText
+            android:id="@+id/login_username_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password"
+            />
+
+        <EditText
+            android:id="@+id/login_password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/login_login_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_login"
+            android:alpha="1"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/login_register_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
