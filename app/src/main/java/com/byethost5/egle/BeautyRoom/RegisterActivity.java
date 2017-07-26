@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.byethost5.egle.BeautyRoom.R;
 
@@ -30,8 +31,32 @@ public class RegisterActivity extends Activity {
         register.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(i);
+                if (username.getText().toString() != null && !username.getText().toString().isEmpty() &&
+                        password.getText().toString() != null && !password.getText().toString().isEmpty() &&
+                        repeat_password.getText().toString() != null && !repeat_password.getText().toString().isEmpty() &&
+                        password.getText().toString().equals(repeat_password.getText().toString()))
+                {
+                    Toast.makeText(RegisterActivity.this, "Congrats! " + username.getText().toString() + " you have successfully registered", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
+                    startActivity(i);
+                }
+                else if (username.getText().toString() == null || username.getText().toString().isEmpty())
+                {
+                    Toast.makeText(RegisterActivity.this, "Please, enter username!", Toast.LENGTH_SHORT).show();
+                }
+                else if (password.getText().toString() == null || password.getText().toString().isEmpty())
+                {
+                    Toast.makeText(RegisterActivity.this, "Please, enter password!", Toast.LENGTH_SHORT).show();
+                }
+                else if (repeat_password.getText().toString() == null || repeat_password.getText().toString().isEmpty())
+                {
+                    Toast.makeText(RegisterActivity.this, "Please, reenter password!", Toast.LENGTH_SHORT).show();
+                }
+                else if (!password.getText().toString().equals(repeat_password.getText().toString()) )
+                {
+                    Toast.makeText(RegisterActivity.this, "Passwords must match!", Toast.LENGTH_SHORT).show();
+                }
+
 
             }
         });
