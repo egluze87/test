@@ -10,4 +10,17 @@
     <string name="register_password">Password</string>
     <string name="register_repeat_password">Repeat Password</string>
     <string name="register_register">Register</string>
+    <string name="new_entry_procedura">Procedūra</string>
+    <string name="new_entry_limfodrenazinis_masazas">Limfodrenažinis masažas</string>
+    <string name="new_entry_soliariumas">Soliariumas</string>
+    <string name="new_entry_masazas">Masažas</string>
+    <string name="new_entry_data">Data</string>
+    <string name="new_entry_laikas">Laikas</string>
+    <string name="new_entry_laikas_9_00">9:00</string>
+    <string name="new_entry_laikas_10_00">10:00</string>
+    <string name="new_entry_laikas_11_00">11:00</string>
+    <string name="new_entry_darbuotojas">Darbuotojas</string>
+    <string name="new_entry_darbuotojas_lina">Lina</string>
+    <string name="new_entry_darbuotojas_asta">Asta</string>
+    <string name="new_entry_darbuotojas_sandra">Sandra</string>
 </resources>
