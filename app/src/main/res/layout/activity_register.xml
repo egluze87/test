@@ -55,6 +55,26 @@
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_email"
+            />
+
+        <EditText
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/register_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <TextView
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"

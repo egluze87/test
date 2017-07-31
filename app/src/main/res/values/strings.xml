@@ -10,6 +10,7 @@
     <string name="register_password">Password</string>
     <string name="register_repeat_password">Repeat Password</string>
     <string name="register_register">Register</string>
+    <string name="register_email">Email</string>
     <string name="new_entry_procedura">Procedūra</string>
     <string name="new_entry_limfodrenazinis_masazas">Limfodrenažinis masažas</string>
     <string name="new_entry_soliariumas">Soliariumas</string>
